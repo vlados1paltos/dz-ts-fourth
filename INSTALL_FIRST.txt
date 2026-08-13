@@ -1,0 +1,1 @@
+После распаковки выполните npm install. Команда создаст package-lock.json.

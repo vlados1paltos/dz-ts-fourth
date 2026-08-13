@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationForm renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="card"
+  >
+    <p
+      class="eyebrow"
+    >
+      React + TypeScript
+    </p>
+    <h1>
+      Registration
+    </h1>
+    <p
+      class="lead"
+    >
+      Создайте аккаунт, заполнив все поля формы.
+    </p>
+    <form
+      class="form"
+      novalidate=""
+    >
+      <label
+        for="login"
+      >
+        Login
+      </label>
+      <input
+        autocomplete="username"
+        id="login"
+        type="text"
+        value=""
+      />
+      <div
+        class="error"
+      />
+      <label
+        for="email"
+      >
+        Email
+      </label>
+      <input
+        autocomplete="email"
+        id="email"
+        type="email"
+        value=""
+      />
+      <div
+        class="error"
+      />
+      <label
+        for="password"
+      >
+        Password
+      </label>
+      <input
+        autocomplete="new-password"
+        id="password"
+        type="password"
+        value=""
+      />
+      <div
+        class="error"
+      />
+      <button
+        disabled=""
+        type="submit"
+      >
+        Register
+      </button>
+    </form>
+  </section>
+</DocumentFragment>
+`;

@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #111;
+  color: #f4f4f4;
+}
+
+a {
+  color: inherit;
+}
+
+.header {
+  border-bottom: 1px solid #2f2f2f;
+  background: #191919;
+}
+
+.header__inner {
+  width: min(100% - 2rem, 64rem);
+  margin-inline: auto;
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #d8d8d8;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+.page {
+  width: min(100% - 2rem, 42rem);
+  margin-inline: auto;
+  padding-block: clamp(2rem, 8vw, 5rem);
+}
+
+.card {
+  padding: clamp(1.5rem, 5vw, 2.75rem);
+  border: 1px solid #343434;
+  border-radius: 1.5rem;
+  background: #1b1b1b;
+  box-shadow: 0 1.25rem 4rem rgb(0 0 0 / 0.25);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 8vw, 4rem);
+  line-height: 1;
+}
+
+.lead {
+  margin: 1rem 0 2rem;
+  color: #bcbcbc;
+  line-height: 1.6;
+}
+
+.form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.form label {
+  margin-top: 0.6rem;
+  font-weight: 700;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #444;
+  border-radius: 0.8rem;
+  background: #101010;
+  color: #fff;
+  font: inherit;
+}
+
+.form input:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.error {
+  min-height: 1.3rem;
+  color: #ff8d8d;
+  font-size: 0.9rem;
+}
+
+.form button {
+  margin-top: 1rem;
+  padding: 0.95rem 1.2rem;
+  border: 0;
+  border-radius: 0.8rem;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.success {
+  margin: 0.8rem 0 0;
+  color: #a7f3a7;
+}
+
+@media (max-width: 34rem) {
+  .header__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-block: 1rem;
+  }
+}

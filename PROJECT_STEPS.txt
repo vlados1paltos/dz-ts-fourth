@@ -1,0 +1,17 @@
+DZ-TS-FOURTH
+
+1. Создан React + TypeScript проект.
+2. Подключены react-router-dom, simple-react-validator и библиотеки для тестирования.
+3. Создан RegistrationForm.tsx.
+4. Поля Login, Email и Password хранятся в state.
+5. Валидация сообщений сделана через simple-react-validator.
+6. Кнопка Register остаётся disabled, пока данные не проходят проверку.
+7. В src/api/auth.ts сделана функция registerUser — заглушка отправки регистрации.
+8. При submit форма вызывает registerUser и после успешного ответа показывает сообщение.
+9. В Header добавлена ссылка Register.
+10. Для маршрутов используется HashRouter, чтобы приложение нормально работало на GitHub Pages.
+11. В RegistrationForm.test.tsx добавлены snapshot-тест, проверка валидации и submit.
+12. Для проверки тестов используется команда:
+    npm test -- --watchAll=false
+13. Для публикации на GitHub Pages используется:
+    npm run deploy
